@@ -26,18 +26,56 @@
                 <label for="nickname" class="form-label">Nickname</label>
                 <input type="text" name="nickname" id="nick-name" class="form-control">
               </div>
+
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" name="name" id="name" class="form-control">
               </div>
+
               <div class="mb-3">
                 <label for="group" class="form-label">Group</label>
                 <input type="text" name="group" id="group" class="form-control">
               </div>
+
               <div class="mb-3">
                 <label for="age" class="form-label">Age</label>
                 <input type="number" min="1" name="age" id="age" class="form-control">
               </div>
+
+              <div class="mb-3">
+                <label for="gender" class="form-label">Gender</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="gender-male">
+                  <label class="form-check-label" for="gender-male">
+                    Male
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="gender-female" checked>
+                  <label class="form-check-label" for="gender-female">
+                    Female
+                  </label>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="agency" class="form-label">Agency</label>
+                <select name="agency" id="agency" class="form-select">
+                  <option selected>Please select agency</option>
+                  <option value="sm">SM Entertainment</option>
+                  <option value="jyp">JYP Entertainment</option>
+                  <option value="yg">YG Entertainment</option>
+                  <option value="hybe">Hybe Label</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">Address</span>
+                  <textarea class="form-control" aria-label="Address"></textarea>
+                </div>
+              </div>
+
               <div class="mb-3">
                 <button type="submit" class="btn btn-primary" id="add-idol">Submit</button>
             </form>
